@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@SpringBootApplication(scanBasePackages = { "com.example.orderfeign.controller" })
+@SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients(basePackages = "com.example.orderfeign.service")
 public class OrderfeignApplication {
